@@ -147,7 +147,7 @@ class YOLOLayer(nn.Module):
             create_grids(self, img_size, (nx, ny))
 
     def forward(self, p, img_size, var=None):
-        if ONNX_EXPORT:
+        if ONNX_EXPORT:qwrwqwr
             bs = 1  # batch size
         else:
             bs, ny, nx = p.shape[0], p.shape[-2], p.shape[-1]
